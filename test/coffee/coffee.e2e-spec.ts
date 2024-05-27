@@ -9,7 +9,7 @@ import * as request from 'supertest';
 
 describe('[Feature] Coffees - /coffees', () => {
   const coffee = {
-    title: 'Shipwreck Roast',
+    name: 'Shipwreck Roast',
     brand: 'Buddy Brew',
     flavors: ['chocolate', 'vanilla'],
   };
@@ -23,7 +23,7 @@ describe('[Feature] Coffees - /coffees', () => {
         TypeOrmModule.forRoot({
           type: 'postgres', // type of our database
           host: 'localhost', // database host
-          port: 5433, // database port
+          port: 5432, // database port
           username: 'postgres', // username
           password: 'pass123', // user password
           database: 'postgres', // name of our database,
