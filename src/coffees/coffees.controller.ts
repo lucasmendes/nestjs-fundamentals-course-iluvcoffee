@@ -32,7 +32,6 @@ export class CoffeesController {
     @Protocol('https') protocol: string,
     @Query() paginationQuery: PaginationQueryDto,
   ) {
-    console.log(protocol);
     // await new Promise(resolve => setTimeout(resolve, 5000));
     // const { limit, offset } = paginationQuery;
     // return `This action returns all coffees. Limit ${limit}, ${offset}`;
@@ -41,7 +40,6 @@ export class CoffeesController {
 
   @Get(':id')
   findOne(@Param('id', ParseIntPipe) id: number) {
-    console.log(id);
     // only int ?? example
     // return `This action returns #${id} coffee`;
     return this.coffeeService.findOne(String(id)); // "" + id;
