@@ -5,7 +5,7 @@ export class CreateCoffeeDto {
   //nest g class coffees/dto/create-coffee.dto --no-spec
   @ApiProperty({ description: 'The name of a coffee.' })
   @IsString()
-  readonly title: string;
+  readonly name: string;
 
   @ApiProperty({ description: 'The brand of a coffee.' })
   @IsString()
