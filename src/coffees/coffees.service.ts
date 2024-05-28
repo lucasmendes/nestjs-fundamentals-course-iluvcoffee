@@ -21,10 +21,10 @@ import coffeesConfig from './config/coffees.config';
 export class CoffeesService {
   constructor(
     @InjectRepository(Coffee)
-    private readonly coffeeRepository: Repository<Coffee>,
+      private readonly coffeeRepository: Repository<Coffee>,
     @InjectRepository(Flavor)
-    private readonly flavorRepository: Repository<Flavor>,
-    private readonly connection: Connection, // @Inject(COFFEE_BRANDS) coffeeBrands: string[], // @Inject(coffeesConfig.KEY) // private readonly coffeesConfiguration: ConfigType<typeof coffeesConfig>,
+      private readonly flavorRepository: Repository<Flavor>,
+      private readonly connection: Connection, // @Inject(COFFEE_BRANDS) coffeeBrands: string[], // @Inject(coffeesConfig.KEY) // private readonly coffeesConfiguration: ConfigType<typeof coffeesConfig>,
   ) {
     // const databaseHost = this.configService.get('database.host', 'localhost');
     // console.log(databaseHost);
